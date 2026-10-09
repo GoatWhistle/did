@@ -3,7 +3,7 @@ import { dirname, join } from "node:path"
 import { fileURLToPath } from "node:url"
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)))
-const source = join(root, "..", "context", "mvp", "examples")
+const source = join(root, "..", "contracts", "examples")
 const target = join(root, "src", "adapters", "fixture", "examples")
 
 for (const name of [

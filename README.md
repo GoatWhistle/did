@@ -18,6 +18,4 @@ docker compose up -d --build
 Остановка робота: исполнитель обнуляет команды при Stop и устаревших наблюдениях, а `cmd_vel_guard`
 останавливает робота при пропаже процесса backend.
 
-Текущая реализация — MVP с одним роботом и сценарием easy. Medium/hard, полная адаптация,
-SLAM и два робота входят в [план полного решения](context/full-solution/README.md).
-Объяснение архитектуры простыми словами: [context/full-solution/explanation.md](context/full-solution/explanation.md).
+Примеры ответов HTTP API для тестов и демо-режима панели лежат в `contracts/examples/`.

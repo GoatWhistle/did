@@ -1,7 +1,7 @@
 """Порты: границы ядра с внешним миром. Реализации — ROS, HTTP/LLM и файловые адаптеры или тестовые двойники.
 
-Контракт F02 описан в context/full-solution/contract-f02.md. Изменение сигнатур — новая версия
-CONTRACT_VERSION и обновление общих fixtures в tests/fixtures/contract.
+Изменение сигнатур — новая версия CONTRACT_VERSION и обновление общих fixtures
+в tests/fixtures/contract.
 """
 from __future__ import annotations
 

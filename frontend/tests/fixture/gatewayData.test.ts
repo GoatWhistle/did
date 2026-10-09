@@ -77,9 +77,9 @@ describe("fixture gateway: journal and map", () => {
 })
 
 describe("shared contract example copies", () => {
-  const shared = new URL("../../../context/mvp/examples/", import.meta.url)
+  const shared = new URL("../../../contracts/examples/", import.meta.url)
   const local = new URL("../../src/adapters/fixture/examples/", import.meta.url)
-  it.skipIf(!existsSync(shared))("match context/mvp/examples (npm run sync-examples)", () => {
+  it.skipIf(!existsSync(shared))("match contracts/examples (npm run sync-examples)", () => {
     for (const name of [
       "state-idle.json",
       "state-running.json",

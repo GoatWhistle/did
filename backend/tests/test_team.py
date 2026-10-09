@@ -128,7 +128,7 @@ def test_team_snapshot_matches_shared_fixture_shape():
     for _ in range(200):
         team.advance()
         service.tick()
-    example = json.loads((Path(__file__).parents[2] / "context/mvp/examples/state-team-partial.json").read_text())
+    example = json.loads((Path(__file__).parents[2] / "contracts/examples/state-team-partial.json").read_text(encoding="utf-8"))
     body = snapshot_json(service.state())
     assert set(body["team"]) == set(example["team"])
     assert_same_shape(body["team"]["robots"][0], example["team"]["robots"][0])

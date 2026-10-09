@@ -37,3 +37,10 @@ artifacts/frontend/
 
 # Local presentation materials
 presentation/
+
+# Local AI tooling and notes
+context/
+.claude/
+.agents/
+AGENTS.md
+CLAUDE.md
