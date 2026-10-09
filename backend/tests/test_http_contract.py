@@ -9,7 +9,7 @@ from fakes import FakeClock, SimWorld
 from domain.geometry import Point
 from harness import make_service
 
-EXAMPLES = Path(__file__).resolve().parents[2] / "context" / "mvp" / "examples"
+EXAMPLES = Path(__file__).resolve().parents[2] / "contracts" / "examples"
 SAMPLES = [Point(1.5, 1.0), Point(-1.0, 2.0), Point(2.5, -1.5)]
 
 
