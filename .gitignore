@@ -38,8 +38,9 @@ artifacts/frontend/
 # Local presentation materials
 presentation/
 
-# Local AI tooling and notes
+# Local AI tooling, notes and task materials
 context/
+task/
 .claude/
 .agents/
 AGENTS.md
