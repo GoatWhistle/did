@@ -41,6 +41,7 @@ presentation/
 # Local AI tooling, notes and task materials
 context/
 task/
+references/
 .claude/
 .agents/
 AGENTS.md
