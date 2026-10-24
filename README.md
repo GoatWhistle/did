@@ -206,6 +206,8 @@ artifacts/    записанные прогоны и разборы
 - **Холодный старт Gazebo бывает долгим.** На медленной машине первый запуск может не уложиться в
   120 с, и супервизор пометит его неуспешным; повторный сброс поднимает среду.
 
-## Лицензия
-
-[MIT](LICENSE)
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/mark.dark.png"><img src="docs/readme/mark.light.png" alt="" width="32" height="32"></picture>
+  <br>
+  <sub>Команда Ullax, DID Hack «Автономный ИИ-исследователь на роботе-платформе», 2026. Лицензия <a href="LICENSE">MIT</a>.</sub>
+</p>
