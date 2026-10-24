@@ -1,5 +1,4 @@
 node_modules
 dist
-.impeccable/
 test-results/
 playwright-report/
