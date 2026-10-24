@@ -1,48 +1,66 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/wordmark-dark.svg"/>
-    <img src="docs/brand/wordmark-light.svg" alt="loam" width="300"/>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/readme/banner.dark.png">
+    <img src="docs/readme/banner.light.png" alt="loam: автономный ИИ-исследователь на TurtleBot3, гипотезу проверяют колёсами" width="880" height="200">
   </picture>
 </p>
 
 <p align="center">
-  <b>Автономный ИИ-исследователь на TurtleBot3.</b><br/>
-  loam сам выдвигает гипотезы, проверяет их собственными колёсами, учится по расходу батареи,<br/>
-  где грунт дорогой, собирает скрытые образцы и всегда возвращается на базу.
+  loam сам выдвигает гипотезы, проверяет их собственными колёсами, учится по расходу батареи, где грунт
+  дорогой, собирает скрытые образцы и всегда возвращается на базу.
 </p>
 
 <p align="center">
-  <a href="#идея"><img src="https://img.shields.io/badge/Идея-0d1212?style=flat-square" alt="Идея"/></a>
-  <a href="#три-решения"><img src="https://img.shields.io/badge/Три_решения-0d1212?style=flat-square" alt="Три решения"/></a>
-  <a href="#как-это-работает"><img src="https://img.shields.io/badge/Как_это_работает-0d1212?style=flat-square" alt="Как это работает"/></a>
-  <a href="#пример"><img src="https://img.shields.io/badge/Пример-0d1212?style=flat-square" alt="Пример"/></a>
-  <a href="#как-пользоваться"><img src="https://img.shields.io/badge/Как_пользоваться-0d1212?style=flat-square" alt="Как пользоваться"/></a>
-  <a href="#что-проверено"><img src="https://img.shields.io/badge/Что_проверено-0d1212?style=flat-square" alt="Что проверено"/></a>
-  <a href="#запуск"><img src="https://img.shields.io/badge/Запуск-0d1212?style=flat-square" alt="Запуск"/></a>
-  <a href="#ограничения"><img src="https://img.shields.io/badge/Ограничения-8a5a00?style=flat-square" alt="Ограничения"/></a>
+  <!-- readme:buttons -->
+  <a href="#запуск"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/cta-run.dark.png"><img src="docs/readme/cta-run.light.png" alt="Запустить локально" width="224" height="44"></picture></a>
+  <a href="artifacts/runs/2026-10-09-easy-seed7/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/cta-example.dark.png"><img src="docs/readme/cta-example.light.png" alt="Записанный прогон" width="221" height="44"></picture></a>
+  <a href="docs/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/cta-docs.dark.png"><img src="docs/readme/cta-docs.light.png" alt="Документация" width="182" height="44"></picture></a>
+  <!-- /readme:buttons -->
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/робот-TurtleBot3_Burger-34484a?style=flat-square&labelColor=0d1212" alt="TurtleBot3 Burger"/>
-  <img src="https://img.shields.io/badge/ROS_2-Jazzy-34484a?style=flat-square&labelColor=0d1212" alt="ROS 2 Jazzy"/>
-  <img src="https://img.shields.io/badge/симуляция-Gazebo_Harmonic-34484a?style=flat-square&labelColor=0d1212" alt="Gazebo Harmonic"/>
-  <img src="https://img.shields.io/badge/планировщик-любая_OpenAI--совместимая_LLM-34484a?style=flat-square&labelColor=0d1212" alt="Любая OpenAI-совместимая LLM"/>
-  <img src="https://img.shields.io/badge/API-FastAPI-34484a?style=flat-square&labelColor=0d1212" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/интерфейс-React_19-34484a?style=flat-square&labelColor=0d1212" alt="React 19"/>
-  <img src="https://img.shields.io/badge/запуск-Docker_Compose-34484a?style=flat-square&labelColor=0d1212" alt="Docker Compose"/>
+  <!-- readme:status -->
+  <a href="#результаты"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-status-1.dark.png"><img src="docs/readme/badge-status-1.light.png" alt="прогон в Gazebo: 3 из 3 образцов, возврат" width="310" height="28"></picture></a>
+  <a href="#результаты"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-status-2.dark.png"><img src="docs/readme/badge-status-2.light.png" alt="научная цепочка: 0 дефектов" width="224" height="28"></picture></a>
+  <br>
+  <a href="#запуск"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-status-3.dark.png"><img src="docs/readme/badge-status-3.light.png" alt="без ключа LLM: работает" width="197" height="28"></picture></a>
+  <a href="LICENSE"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-status-4.dark.png"><img src="docs/readme/badge-status-4.light.png" alt="лицензия: MIT" width="125" height="28"></picture></a>
+  <!-- /readme:status -->
 </p>
 
 <p align="center">
-  <img src="docs/images/control.png" alt="Панель loam во время прогона: слева карта арены с роботом, оценками грунта и маршрутом, справа текущий план, причина резервного плана, состояние датчика и подтверждаемая гипотеза" width="900"/>
+  <!-- readme:stack -->
+  <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-stack-1.dark.png"><img src="docs/readme/badge-stack-1.light.png" alt="робот: TurtleBot3 Burger" width="191" height="28"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-stack-2.dark.png"><img src="docs/readme/badge-stack-2.light.png" alt="ROS 2: Jazzy" width="118" height="28"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-stack-3.dark.png"><img src="docs/readme/badge-stack-3.light.png" alt="симуляция: Gazebo Harmonic" width="224" height="28"></picture>
+  <br>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-stack-4.dark.png"><img src="docs/readme/badge-stack-4.light.png" alt="планировщик: OpenAI-совместимая LLM" width="302" height="28"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-stack-5.dark.png"><img src="docs/readme/badge-stack-5.light.png" alt="панель: React 19 и FastAPI" width="206" height="28"></picture>
+  <!-- /readme:stack -->
 </p>
 
-<p align="center"><sub>Кадр записи настоящего прогона в Gazebo, easy seed 7. Робот идёт к максимуму сигнала, на карте видны его оценки стоимости грунта, справа — план и гипотеза, которую сейчас подтверждают измерения.</sub></p>
+<p align="center">
+  <!-- readme:nav -->
+  <a href="#зачем-это"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-1.dark.png"><img src="docs/readme/badge-nav-1.light.png" alt="Зачем это" width="92" height="26"></picture></a>
+  <a href="#как-это-работает"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-2.dark.png"><img src="docs/readme/badge-nav-2.light.png" alt="Как это работает" width="137" height="26"></picture></a>
+  <a href="#попробовать-за-две-минуты"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-3.dark.png"><img src="docs/readme/badge-nav-3.light.png" alt="Попробовать" width="111" height="26"></picture></a>
+  <br>
+  <a href="#результаты"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-4.dark.png"><img src="docs/readme/badge-nav-4.light.png" alt="Результаты" width="100" height="26"></picture></a>
+  <a href="#запуск"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-5.dark.png"><img src="docs/readme/badge-nav-5.light.png" alt="Запуск" width="71" height="26"></picture></a>
+  <a href="#устройство"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-6.dark.png"><img src="docs/readme/badge-nav-6.light.png" alt="Устройство" width="100" height="26"></picture></a>
+  <a href="#ограничения"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/badge-nav-7.dark.png"><img src="docs/readme/badge-nav-7.light.png" alt="Ограничения" width="111" height="26"></picture></a>
+  <!-- /readme:nav -->
+</p>
 
----
+<p align="center">
+  <img src="docs/images/control.png" alt="Панель loam во время прогона: слева карта арены с роботом, оценками грунта и маршрутом, справа текущий план, причина резервного плана, состояние датчика и подтверждаемая гипотеза" width="880">
+  <br>
+  <sub>Настоящий прогон в Gazebo, easy seed 7: робот идёт к максимуму сигнала, на карте его оценки стоимости грунта.</sub>
+</p>
 
-## Идея
+## Зачем это
 
-Задача хакатона — робот, который ведёт себя как исследователь, а не как пылесос с картой. На арене спрятаны
+Нужен робот, который ведёт себя как исследователь, а не как пылесос с картой. На арене спрятаны
 образцы, грунт местами дорогой, батарея ограничена, а в сложном сценарии среда меняется без
 предупреждения: дорожает грунт, появляется опасная зона, сбоит датчик. Готового ответа нет:
 
@@ -50,49 +68,14 @@
 - сколько стоит проезд, видно только по тому, как быстро тает батарея на метр пути;
 - если среда изменилась, старая модель продолжает уверенно врать, а робот об этом не знает.
 
-loam решает это научным циклом: **гипотеза → проверочное действие → независимое измерение → вывод →
-новое решение**. Каждый прогноз записывается до поездки, каждый вывод опирается на измерения после неё,
+loam решает это научным циклом: гипотеза → проверочное действие → независимое измерение → вывод →
+новое решение. Каждый прогноз записывается до поездки, каждый вывод опирается на измерения после неё,
 а журнал объясняет, почему робот поехал именно туда.
-
-## Три решения
-
-<table>
-<tr>
-<td valign="top" width="33%">
-
-**LLM предлагает, код проверяет**
-
-Языковая модель работает только на верхнем уровне: по тексту миссии и состоянию она предлагает
-последовательность подцелей. Каждую подцель код проверяет на достижимость и запас энергии на возврат;
-скоростью управляет алгоритм. Если модель молчит, медлит или ошибается, включается явный резервный
-планировщик, и панель показывает причину.
-
-</td>
-<td valign="top" width="33%">
-
-**Гипотезу проверяют колёсами**
-
-Прежде чем ехать, агент записывает численный прогноз: расход на метр, сигнал в точке, интервал
-допустимых значений. После поездки вывод считает алгоритм по новым измерениям, а не модель:
-подтверждена, опровергнута или данных мало. Опровержение меняет карту стоимостей и следующий маршрут.
-
-</td>
-<td valign="top" width="33%">
-
-**Агент не видит ответов**
-
-Истина сценария — где образцы, где границы грунтов, когда сработают события — есть только у судьи.
-Агент получает те же сигналы, что получил бы настоящий робот: одометрию, лидар, батарею, датчик
-образцов и события столкновений. Изменения среды он обнаруживает сам, по расхождению прогноза с
-измерениями.
-
-</td>
-</tr>
-</table>
 
 ## Как это работает
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#ffffff","primaryTextColor":"#0d1212","primaryBorderColor":"#0d1212","secondaryColor":"#d3e4df","tertiaryColor":"#edf4f2","lineColor":"#717f80","textColor":"#0d1212","noteBkgColor":"#d3e4df","noteTextColor":"#34484a","actorBkg":"#ffffff","actorBorder":"#0d1212","fontFamily":"Inter"}}}%%
 flowchart LR
     S[("Сценарий<br/>скрыт от агента")] --> J["Gazebo и судья<br/>батарея · сигнал · события"]
     J -- "наблюдения ROS 2" --> R["Исследование<br/>модель грунта · CUSUM<br/>гипотезы · опасности · датчик"]
@@ -106,29 +89,46 @@ flowchart LR
     L --> U["Панель loam<br/>карта · план · аналитика"]
 ```
 
-Модель грунта — регуляризованная оценка расхода по участкам карты; детектор CUSUM замечает, что расход
+- **LLM предлагает, код проверяет.** Языковая модель по тексту миссии и состоянию предлагает
+  последовательность подцелей. Каждую подцель код проверяет на достижимость и запас энергии на
+  возврат, скоростью управляет алгоритм. Если модель молчит, медлит или ошибается, включается
+  резервный планировщик, и панель показывает причину.
+- **Гипотезу проверяют колёсами.** Перед поездкой агент записывает численный прогноз: расход на метр,
+  сигнал в точке, интервал допустимых значений. Вывод считает алгоритм по новым измерениям:
+  подтверждена, опровергнута или данных мало. Опровержение меняет карту стоимостей и следующий маршрут.
+- **Агент не видит ответов.** Истина сценария есть только у судьи. Агент получает одометрию, лидар,
+  батарею, датчик образцов и события столкновений, а изменения среды обнаруживает сам, по расхождению
+  прогноза с измерениями.
+
+Модель грунта — регуляризованная оценка расхода по участкам карты. Детектор CUSUM замечает, что расход
 на знакомом участке перестал совпадать с прогнозом, и открывает гипотезу о смене режима. Опасные зоны
 восстанавливаются из событий `hazard_hit`, а монитор датчика запрещает собирать образец вслепую, пока
 сигнал шумит, залип или пропал. Страж скорости обнуляет команды, если процесс агента пропал или
 наблюдения устарели.
 
 <p align="center">
-  <img src="docs/images/analytics-running.png" alt="Вкладка аналитики во время прогона: батарея, остаток после возврата и резерва, текущий эксперимент с прогнозом сигнала и график энергии" width="900"/>
+  <img src="docs/images/analytics-running.png" alt="Вкладка аналитики во время прогона: батарея, остаток после возврата и резерва, текущий эксперимент с прогнозом сигнала и график энергии" width="880">
+  <br>
+  <sub>Вкладка «Аналитика»: текущий эксперимент, его прогноз до поездки и динамика энергии с оценкой возврата.</sub>
 </p>
 
-<p align="center"><sub>Вкладка «Аналитика» во время того же прогона: текущий эксперимент, его прогноз до поездки и динамика энергии с оценкой возврата.</sub></p>
+## Попробовать за две минуты
 
-Подробно по частям:
+| Шаг | Что сделать | Что увидите |
+|---|---|---|
+| 1 | Запустите стек по разделу [Запуск](#запуск) и откройте <http://localhost:8080> | Карту арены и карточку миссии со статусом среды |
+| 2 | Выберите профиль easy, medium или hard, seed и нажмите «Старт» | Робот трогается, на карте появляется маршрут и цель, справа план с причиной |
+| 3 | Откройте «План и исследование» | Предпосылки плана, состояние датчика, открытые гипотезы и модель грунта |
+| 4 | Переключитесь на «Аналитику» | Прогноз, действие, измерение, вывод и график энергии |
+| 5 | Откройте журнал и скачайте его | JSON всего прогона для разбора и воспроизведения |
 
-- [Симуляция, судья и сценарии easy/medium/hard](simulation/README.md)
-- [Правила локального судьи: расход, сигнал, штрафы, скрытые события](simulation/judge/README.md)
-- [Панель: архитектура, дизайн-система, режимы показа](frontend/README.md)
-- [HTTP API: примеры ответов](contracts/examples/README.md)
+Чтобы посмотреть интерфейс без симуляции, соберите панель в демо-режиме: 16 сценариев с записанными
+данными покрывают каждое состояние контракта, от отказа LLM до потери партнёра.
 
-## Пример
+## Результаты
 
-Вход — сценарий easy, seed 7, готовая карта, один робот, миссия «Собрать как можно больше образцов и
-вернуться на базу». Выход — запуск `31f8dad3`, записанный от первого до последнего кадра:
+[Записанный прогон](artifacts/runs/2026-10-09-easy-seed7/README.md): сценарий easy, seed 7, готовая
+карта, один робот, миссия «Собрать как можно больше образцов и вернуться на базу».
 
 | Показатель | Значение |
 |---|---:|
@@ -145,53 +145,18 @@ flowchart LR
 |---|---|---|---|
 | Сигнал в целевой области ≈ 0,608, медиана новых показаний в [0,508; 0,708] | Доехать к (1,53; 1,53) и измерить сигнал | Медиана 0,942 по 7 новым показаниям | **Опровергнуто**: локальная модель поиска уточняется |
 
+| Проверка | Результат | Команда |
+|---|---|---|
+| Backend | 327 тестов, 3 ROS-теста пропускаются вне контейнера | `cd backend && python -m pytest tests -q` |
+| Судья, карты, стенд | 122 теста | `pytest simulation/judge/tests simulation/mapping/tests scripts/evaluation/tests -q` |
+| Frontend | 1020 unit-тестов, typecheck, lint, сборка | `cd frontend && npm run verify` |
+| Браузер | Playwright: 16 сценариев × ru/en × три ширины, axe; 223 из 223 | `cd frontend && npm run e2e` |
+
 <p align="center">
-  <img src="docs/images/analytics-completed.png" alt="Итог запуска: завершено успешно, батарея 29,6, три образца, последний эксперимент опровергнут, график энергии за весь прогон" width="900"/>
+  <img src="docs/images/analytics-completed.png" alt="Итог запуска: завершено успешно, батарея 29,6, три образца, последний эксперимент опровергнут, график энергии за весь прогон" width="880">
+  <br>
+  <sub>Итог: три образца, возврат с запасом. Все планы в этом прогоне выдал резервный планировщик.</sub>
 </p>
-
-<p align="center"><sub>Итоговый экран: три образца, возврат с запасом, последний эксперимент опровергнут измерением. Все планы в этом прогоне выдал резервный планировщик, внешняя модель не отвечала в срок.</sub></p>
-
-## Как пользоваться
-
-| Шаг | Что сделать | Что увидите |
-|---|---|---|
-| 1 | Запустите стек ([как](#запуск)) и откройте `http://localhost:8080` | Логотип loam, карту арены и карточку миссии со статусом среды |
-| 2 | Выберите тип задачи, профиль easy, medium или hard, seed и нажмите «Старт» | Робот трогается, на карте появляется маршрут и цель, справа план с причиной |
-| 3 | Следите за картой | Траекторию, оценки стоимости грунта с неопределённостью, найденные опасности, собранные образцы |
-| 4 | Откройте «План и исследование» | Предпосылки плана, состояние датчика, открытые гипотезы и модель грунта |
-| 5 | Переключитесь на «Аналитику» | Текущий эксперимент: прогноз, действие, измерение, вывод, и график энергии |
-| 6 | Откройте журнал | Временную шкалу: каждое решение, гипотеза, эксперимент и вывод с временем симуляции |
-| 7 | Скачайте журнал иконкой экспорта | JSON всего прогона для разбора и воспроизведения |
-
-<table>
-<tr>
-<td width="50%"><img src="docs/images/control-late.png" alt="Карта во второй половине прогона: плотная сетка оценок грунта вокруг пройденного пути, робот у максимума сигнала"/></td>
-<td width="50%"><img src="docs/images/cover.png" alt="Обложка loam: знак из двух изолиний с найденной точкой и надпись Autonomous field researcher"/></td>
-</tr>
-<tr>
-<td align="center"><sub>Вторая половина прогона: оценки грунта вдоль пройденного пути</sub></td>
-<td align="center"><sub>Знак loam: две изолинии вокруг найденного образца</sub></td>
-</tr>
-</table>
-
-Чтобы смотреть интерфейс без симуляции, соберите панель в демо-режиме: 16 сценариев с заранее
-записанными данными покрывают каждое состояние контракта, от отказа LLM до потери партнёра.
-Gazebo вживую открывается в браузере через noVNC.
-
-## Что проверено
-
-| Что | Результат | Где смотреть |
-|---|---|---|
-| Полный прогон в Gazebo | easy seed 7: 3 образца, возврат, 29,61/60 батареи, 34 гипотезы, видео 6:09 | [`artifacts/demo/2026-10-09`](artifacts/demo/2026-10-09/README.md) |
-| Научная цепочка | 0 дефектов: прогноз до действия, независимое измерение, вывод по алгоритму | [`science-chain.txt`](artifacts/demo/2026-10-09/science-chain.txt) |
-| Backend | 327 тестов: ядро, исследования, планировщик, HTTP-контракт, команда роботов; 3 ROS-теста пропускаются вне контейнера | `cd backend && python -m pytest tests -q` |
-| Судья, карты, стенд | 122 теста: расход, сигнал, collect и finish, скрытые события, склейка карт двух роботов | `pytest simulation/judge/tests simulation/mapping/tests scripts/evaluation/tests -q` |
-| Frontend | 1020 unit-тестов, typecheck, lint, сборка и проверки правил кода | `cd frontend && npm run verify` |
-| Браузер | E2E на Playwright: 16 сценариев демо × ru/en × три ширины × обычное и сниженное движение, axe; последний полный прогон 223 из 223 | `cd frontend && npm run e2e` |
-
-Полный прогон — один запуск, а не серия: он показывает, что цикл «гипотеза → действие → измерение →
-вывод» работает на настоящей физике, но не доказывает устойчивость на medium и hard. Адаптация к скрытым
-изменениям и координация двух роботов проверены на подменной среде с теми же портами, что у ROS.
 
 ## Запуск
 
@@ -201,23 +166,31 @@ docker compose up -d --build
 docker compose --profile gui up -d gui
 ```
 
-Панель откроется на `http://localhost:8080`, Gazebo — на `http://localhost:6080/vnc.html`. Если порт
+Панель откроется на <http://localhost:8080>, Gazebo — на <http://localhost:6080/vnc.html>. Если порт
 занят, задайте `FRONTEND_PORT` или `GUI_PORT`. Без ключа работает всё, кроме внешней модели: планы
-выдаёт резервный планировщик, и панель это показывает. Чтобы подключить LLM, заполните в `.env` три
-переменные: `LLM_ENDPOINT`, `LLM_MODEL`, `LLM_API_KEY`. Первая сборка образа симуляции занимает время:
-скачиваются ROS 2 Jazzy, Gazebo Harmonic и пакеты TurtleBot3.
+выдаёт резервный планировщик. Чтобы подключить LLM, заполните в `.env` переменные `LLM_ENDPOINT`,
+`LLM_MODEL` и `LLM_API_KEY`. Первая сборка образа симуляции скачивает ROS 2 Jazzy, Gazebo Harmonic и
+пакеты TurtleBot3.
 
 Прогон без браузера: `python3 scripts/run_mission.py SEED`, итог и журнал сохраняются в `artifacts/`.
 
-## Документация
+## Устройство
 
-| Раздел | Что внутри |
+```text
+backend/      агент: исследование, планировщик, навигация, HTTP API
+simulation/   Gazebo, судья, сценарии, SLAM, два робота
+frontend/     панель loam
+contracts/    примеры ответов API
+scripts/      прогон миссии, анализ, стенд оценки
+artifacts/    записанные прогоны и разборы
+```
+
+| Документ | Что внутри |
 |---|---|
 | [Симуляция](simulation/README.md) | Gazebo, супервизор сброса, профили сценариев, SLAM, два робота |
 | [Судья](simulation/judge/README.md) | Батарея, сигнал образцов, collect и finish, счёт, скрытые события hard |
 | [Панель](frontend/README.md) | Архитектура интерфейса, демо-режим, проверки и e2e |
 | [Примеры API](contracts/examples/README.md) | Ответы `/api/v1`: состояние, карта, журнал, команда, ошибки |
-| [Запись показа](scripts/defense/README.md) | Как записываются прогон, кадры и видео для защиты |
 
 ## Ограничения
 
@@ -228,13 +201,11 @@ docker compose --profile gui up -d gui
 - **Внешняя модель медленная.** В записанном прогоне все планы выдал резервный планировщик: модель не
   укладывалась в бюджет 8 с. Путь с LLM проверен отдельными запросами, серии живых прогонов с ней нет.
 - **Полностью подтверждён один сценарий.** easy пройден в Gazebo от начала до конца. medium и hard
-  открываются и работают, но серия прогонов с метриками адаптации есть только на подменной среде. SLAM и
-  два робота реализованы и проверены отдельно, в общую точку сборки ещё не включены.
+  работают, но серия прогонов с метриками адаптации есть только на подменной среде. SLAM и два робота
+  реализованы и проверены отдельно, в общую точку сборки ещё не включены.
 - **Холодный старт Gazebo бывает долгим.** На медленной машине первый запуск может не уложиться в
   120 с, и супервизор пометит его неуспешным; повторный сброс поднимает среду.
 
-<p align="center">
-  <img src="docs/brand/symbol.svg" alt="" width="40"/>
-</p>
+## Лицензия
 
-<p align="center"><sub>Команда GoatWhistle, DID Hack «Автономный ИИ-исследователь на роботе-платформе», 2026.</sub></p>
+[MIT](LICENSE)

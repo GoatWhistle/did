@@ -26,7 +26,6 @@ playwright-report/
 .claude/worktrees/
 
 # Поминутные кадры демо-прогонов: сырьё для backup-demo.mp4, ~100 МБ
-artifacts/defense/**/frames/
 # Local design and build caches
 .impeccable/
 presentation/.vite/
@@ -46,3 +45,5 @@ references/
 .agents/
 AGENTS.md
 CLAUDE.md
+
+artifacts/mission-*.json
