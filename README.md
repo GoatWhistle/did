@@ -209,5 +209,5 @@ artifacts/    записанные прогоны и разборы
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="docs/readme/mark.dark.png"><img src="docs/readme/mark.light.png" alt="" width="32" height="32"></picture>
   <br>
-  <sub>Команда Ullax, DID Hack «Автономный ИИ-исследователь на роботе-платформе», 2026. Лицензия <a href="LICENSE">MIT</a>.</sub>
+  <sub>Команда GoatWhistle, DID Hack «Автономный ИИ-исследователь на роботе-платформе», 2026. Лицензия <a href="LICENSE">MIT</a>.</sub>
 </p>
